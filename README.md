@@ -6,9 +6,9 @@ The framework could
 - backfill the data files in the past
 - incrementally transform the data from bronze tables to silver tables
 - incrementally load the dta from silver tables to gold tables
-- create the SCD dimension tables
+- handle slowly changing dimensions (SCD)
 - support the data tranformation with Spark SQL and PySpark(python)
-- verify the data quality of the tables on brozne, silver and gold layer with a rule engine and generate data quality report
+- verify the data quality of the tables in all layers with a rule engine and generate data quality report
 - auto-track the tables dependencies and generate data lineage report
 - ingest the files and process the data accrossing different layers in micro-batch mode
 
