@@ -1,5 +1,5 @@
 # MS_Fabric_MDD
-A Metadata Driven ETL Framework (MDD) built on top of Pyspark and Lakehouse, which could drive the data from end to end with configurations in YAML files.
+A Metadata Driven ETL Framework (MDD) built on top of Pyspark and Lakehouse for MS Fabric, which could drive the data from end to end with configurations in YAML files.
 
 The framework could 
 - onboard the data files of multiple formats: csv, parquet, text, json, orc, excel, xml and dbf
