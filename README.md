@@ -1,5 +1,5 @@
 # MS_Fabric_MDD
-A Metadata Driven Framework (MDD) built with Pyspark and Lakehouse, which could driven the data from end to end using the metadata in YAML files.
+A Metadata Driven Framework (MDD) built on top of Pyspark and Lakehouse, which could drive the data from end to end with configurations.
 The framework could 
 - onboard the data files of multiple formats: csv, parquet, text, json, orc, excel, xml and dbf
 - backfill the data files in the past
