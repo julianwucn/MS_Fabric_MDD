@@ -1,5 +1,5 @@
 # MS_Fabric_MDD
-A metadata-driven ETL framework developed using PySpark and Lakehouse architecture on Microsoft Fabric, enabling end-to-end data pipeline automation based on configurations defined in YAML files.
+A metadata-driven ETL framework developed using PySpark and Lakehouse and/or data warehouse architecture on Microsoft Fabric, enabling end-to-end data pipeline automation based on configurations defined in YAML files.
 
 Main Features
 - Align with medallion architecture with customizable bronze, silver and gold layers
