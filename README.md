@@ -1,16 +1,17 @@
 # MS_Fabric_MDD
-A Metadata Driven ETL Framework (MDD) built on top of Pyspark and Lakehouse for MS Fabric, which could drive the data from end to end with configurations in YAML files.
+A metadata-driven ETL framework developed using PySpark and Lakehouse architecture on Microsoft Fabric, enabling end-to-end data pipeline automation based on configurations defined in YAML files.
 
-The framework could 
-- onboard the data files of multiple formats: csv, parquet, text, json, orc, excel, xml and dbf
-- backfill the data files in the past
-- incrementally transform the data from bronze tables to silver tables
-- incrementally load the dta from silver tables to gold tables
-- handle slowly changing dimensions (SCD)
-- support the data tranformation with Spark SQL and PySpark(python)
-- verify the data quality of the tables in all layers with a rule engine and generate data quality report
-- auto-track the tables dependencies and generate data lineage report
-- ingest the files and process the data accrossing different layers in micro-batch mode
+Main Features
+- Align with medallion architecture with customizable bronze, silver and gold layers
+- Support the data ingestion of different sources and flat files of csv, text, json, orc, parquet, table, jdbc, excel, xml and dbf
+- Support multiple data refresh strategies: full, incremental and backfill
+- Support multiple incremental data refresh options: CDF and timestamp, auto fallback to backfill or full data refresh options if in recent not-synced CDF data is purged
+- Support multiple data write options: append, merge, overwrite
+- Support multiple transformation code: sql, python and notebook
+- Support SCD type 2 dimensions
+- Built-in micro-batches support for both data ingestion and data transformation
+- Built-in rule engine to support data validation and data correctness
+- Built-in data lineage and table dependency tracking
 
 Medallion Architecture
 ![image](https://github.com/user-attachments/assets/59efce49-118b-4f1f-b7ea-64b284535bf7)
@@ -22,9 +23,4 @@ Metadata Driven Framework
 ![image](https://github.com/user-attachments/assets/b0839581-9cd8-438e-9a67-92bb2602e5bb)
 ![image](https://github.com/user-attachments/assets/0ffafe32-3550-483e-bb8f-25b7065b50b8)
 
-Sample metadata YAML files
-- onboarding.yml
-- transform.yml
-- load.yml
-- workflow.yml
-- task.yml
+
